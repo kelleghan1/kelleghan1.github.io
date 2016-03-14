@@ -1,3 +1,7 @@
 body {
   background: url("../../media/restaurant-hero-image.jpg");
 }
+
+input {
+  position: fixed;
+}
