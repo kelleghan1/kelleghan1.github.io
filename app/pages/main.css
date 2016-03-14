@@ -107,5 +107,8 @@ article {
 
 #quantity {
   width: 50px;
+}
 
+.title {
+  font-size: 12px;
 }
