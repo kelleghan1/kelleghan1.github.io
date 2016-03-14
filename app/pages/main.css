@@ -49,7 +49,6 @@ header {
   color: white;
 }
 
-
 .banner > p {
 }
 
@@ -67,4 +66,47 @@ article {
   font-weight: 300;
   margin: 10px;
   flex-grow: 1;
+}
+
+.ordercontent {
+  height: 500px;
+  width: 100%;
+  background-color: orange;
+
+}
+
+.orderform {
+  clear: both;
+  width: 70%;
+  margin: 20px auto;
+}
+
+#menuitems {
+  background-color: white;
+  border: 1px solid black;
+  height: 200px;
+}
+
+#orderlist {
+  background-color: white;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.colone {
+  margin-top: 15px;
+  float: left;
+  width:60%;
+}
+
+.coltwo {
+  margin-top: 15px;
+  float: left;
+  width:35%;
+  margin-left: 5%;
+}
+
+#quantity {
+  width: 50px;
+
 }
