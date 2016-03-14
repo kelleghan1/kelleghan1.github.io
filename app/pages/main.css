@@ -7,7 +7,7 @@ body {
 
 .content > section {
   padding: 15%;
-  background: url("media/restaurant-hero-image.jpg");
+  background: url("../../media/restaurant-hero-image.jpg");
   background-repeat: no-repeat;
 }
 
