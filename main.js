@@ -74,9 +74,10 @@ $(document).ready(function() {
       $.ajax({
         url: 'https://galvanize-eats-api.herokuapp.com/orders',
         type: 'POST',
-        // data: order,
+        data: order,
         dataType: 'json', // added data type
         success: function(sent) {
+          console.log(order);
           console.log(sent);
         }
       });
