@@ -89,38 +89,48 @@ article {
 }
 
 #orderlist {
-  background-color: white;
   height: 200px;
-  border: 1px solid black;
+  overflow: scroll;
 }
 
 .colone {
-  padding: 5%;
+  padding: 2%;
   margin-top: 15px;
   float: left;
   width:50%;
   background-color: white;
   border: 1px solid black;
   box-sizing: border-box;
-
 }
 
 .coltwo {
+  padding: 2%;
   box-sizing: border-box;
   margin-top: 15px;
   float: left;
   width:35%;
   margin-left: 5%;
+  background-color: white;
+  border: 1px solid black;
 }
 
 #quantity {
   width: 50px;
 }
 
+#total {
+  border-top: 1px solid black;
+}
+
 th {
   padding: 5px 0;
-  font-size: 10px;
+  font-size: 12px;
   text-align: left;
+}
+
+td:nth-child(1) {
+  text-align: left;
+  width: 100%;
 }
 
 td:nth-child(2) {
@@ -130,4 +140,8 @@ td:nth-child(2) {
 
 .userinfo {
   clear: both;
+}
+
+input.userinfo {
+  width: 100%;
 }
