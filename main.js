@@ -56,7 +56,6 @@ $(document).ready(function() {
 
   })
 
-
   $('#deliverit').on('click', function(event) {
     var phonenum = $('#phone').val();
     var addressval = $('#address').val();
@@ -64,23 +63,23 @@ $(document).ready(function() {
     if ( !phonenum.match(/^\(\d{3}\) ?\d{3}( |-)?\d{4}|^\d{3}( |-)?\d{3}( |-)?\d{4}$/) ) {
       window.alert("Phone Number Required");
 
-    }else if ( !addressval.match(/\d{1,3}.?\d{0,3}\s[a-zA-Z]{2,30}\s[a-zA-Z]{2,15}/) ) {
+    }else if ( !addressval.match(/\d{1,3}.?\d{0,3}\s[a-zA-Z\d]{2,30}\s[a-zA-Z]{2,15}/) ) {
       window.alert("Address Required");
     }else{
       order.number = phonenum;
       order.address = addressval;
+      window.alert("Thank you for your order!");
+
 
       $.ajax({
         url: 'https://galvanize-eats-api.herokuapp.com/orders',
         type: 'POST',
-        data: order,
+        // data: order,
         dataType: 'json', // added data type
         success: function(sent) {
           console.log(sent);
         }
-
       });
-
     }
   })
 })
