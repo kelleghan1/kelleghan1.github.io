@@ -118,7 +118,7 @@ article {
   width: 50px;
 }
 
-#total {
+#tax {
   border-top: 1px solid black;
 }
 
@@ -144,4 +144,10 @@ td:nth-child(2) {
 
 input.userinfo {
   width: 100%;
+}
+
+.footer {
+  text-align: center;
+  background-color: black;
+  color: white;
 }

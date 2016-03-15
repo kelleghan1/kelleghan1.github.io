@@ -1,12 +1,13 @@
 $(document).ready(function() {
   var selecteditem = [];
   var selected = 0;
+  var tax = 0;
   var total = 0;
   var order = {};
   var orderItems = [];
 
+  $('#tax').html('<p>Tax</p>');
   $('#total').html('<p>Total</p>');
-
 
   $.ajax({
     url: 'https://galvanize-eats-api.herokuapp.com/menu',
@@ -42,8 +43,11 @@ $(document).ready(function() {
   $('#additem').on('click', function(event) {
 
     if ($('#quantity').val() > 0 && selected != 0) {
-      total += parseFloat(selected * $('#quantity').val())
+      tax += (8/100)*parseFloat(selected * $('#quantity').val())
+      total += (parseFloat(selected * $('#quantity').val()) + (8/100)*parseFloat(selected * $('#quantity').val()));
       $('#orderlist').append('<p>'+$('#quantity').val()+' '+selecteditem+' '+selected+'</p>');
+      $('#tax').html('<p>Tax ' + tax.toFixed(2) + '</p>');
+
       $('#total').html('<p>Total ' + total.toFixed(2) + '</p>');
       orderItems.push($('#quantity').val()+' '+selecteditem+' '+selected);
     }
