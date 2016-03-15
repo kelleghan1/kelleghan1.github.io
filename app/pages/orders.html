@@ -5,9 +5,8 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="main.css"/>
-  <script type="text/javascript" src="main.js"></script>
-  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+  <script type="text/javascript" src="../../main.js"></script>
 </head>
 
 <body>
@@ -21,21 +20,51 @@
     <div class='orderform'>
       <div class='colone'>
 
-        <div id='menuitems'>
+
+
+
+
+
+
+
+
+        <table id='burgers'>
+          <tr>
+            <th>Burgers</th>
+          </tr>
+        </table>
+
+
+
+        <table id='pizzas'>
+          <tr>
+            <th>Pizza</th>
+          </tr>
+        </table>
+
+
+
+
+
+
+
+        <div class='userinfo'>
+
+          <input type="text" id="quantity" placeholder='Quantiy' value="">
+
+          <input type="button" id='additem' value='Add Item'>
+
+          <br>
+
+          <input type="text" id="name" placeholder='Name' value="">
+
+          <input type="text" id='phone' placeholder='Phone' value=''>
+
+          <input type="text" id="address" placeholder='Address' value="">
+
+          <input type="button" name='deliverit' id='deliverit' value='Deliver It!'>
 
         </div>
-
-        <input type="text" id="quantity" value="">
-
-        <input type="button" id='additem' value='Add Item'>
-
-        <input type="text" id="name" value="">
-
-        <input type="text" id='phone' value=''>
-
-        <input type="text" id="address" value="">
-
-        <input type="button" name='deliverit' id='deliverit' value='Deliver It!'>
 
       </div>
 
@@ -47,6 +76,8 @@
       </div>
 
     </div>
+
+
 
   </div>
 
